@@ -4,7 +4,7 @@ const fs=require('fs')
 // Create a MySQL connection
 const connection = mysql.createConnection({
   host: '127.0.0.1',
-  user: 'rexroth',
+  user: 'root',
   password: 'Cool1234567890-',
   database: 'bmg'
 });
