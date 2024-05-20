@@ -28,7 +28,7 @@ connection.connect(err => {
   // SQL query to insert data into the table
   festo_round_cylinder.forEach(item=>{
   
-  const insertQuery = 'INSERT INTO rexroth_high_precision_ball_runner_blocks_BSHP_with_mysql_column_name SET ?';
+  const insertQuery = 'INSERT INTO rexroth_high_precision_ball_runner_blocks_BSHP SET ?';
 
   // Execute the insert query
   connection.query(insertQuery, item, (err, results) => {
