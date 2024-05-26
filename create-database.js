@@ -19,7 +19,7 @@ connection.connect(err => {
 
 
 
-  const festo_round_cylinder=JSON.parse(fs.readFileSync('./product-category.json'))
+  const festo_round_cylinder=JSON.parse(fs.readFileSync('./rexroth-product.json'))
 
 
 
@@ -28,7 +28,7 @@ connection.connect(err => {
   // SQL query to insert data into the table
   festo_round_cylinder.forEach(item=>{
   
-  const insertQuery = 'INSERT INTO rexroth_varioflow_categories SET ?';
+  const insertQuery = 'INSERT INTO rexroth_varioflow_products SET ?';
 
   // Execute the insert query
   connection.query(insertQuery, item, (err, results) => {
